@@ -1,0 +1,43 @@
+ALGORITHM algorithm_name
+VAR
+ tab1: ARRAY_OF INTEGER ;
+   tab2: ARRAY_OF INTEGER ;
+ sum: INTEGER ;
+ e: INTEGER ;
+ x : ARRAY_OF INTEGER ;
+BEGIN
+   sum = 0 ;
+   x=[] ;
+    FOR i FROM 0 TO tab1.lenght STEP 1  DO
+        e=0 ;
+    END_FOR
+    FOR j FROM 0 TO tab2.lenght STEP 1  DO
+        
+        if (tab1[i] ===tab2[j]) then
+   e++;
+END if
+END_FOR
+  If (e===0) 
+  then
+       x.push(tab[i]) ;
+END if
+    
+    FOR i FROM 0 TO tab1.lenght STEP 1  DO
+        e=0 ;
+    END_FOR
+    FOR j FROM 0 TO tab2.lenght STEP 1  DO
+         
+        if (tab1[i] ===tab2[j]) then
+    e++ ;
+END if
+END_FOR
+  If (e===0) then
+ x.push(tab[j]) ;
+END if
+FOR i FROM 0 TO x.lenght STEP 1  DO
+    sum+=x[i]
+    
+END_FOR
+ write ("x")
+    write ("sum")
+END
